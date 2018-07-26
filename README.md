@@ -1,2 +1,0 @@
-# illneseas
-final project GWC
