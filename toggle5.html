@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+    background-color: #0000FF;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #000000;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #FFF;
+}
+</style>
+</head>
+<body>
+
+<center><h2>Arthritis</h2></center>
+
+
+<button class="collapsible">About</button>
+<div class="content">
+  <p>According to arthritis.org, arthritis is “an informal way of referring to joint pain or joint disease” with “100 different types of arthritis”.
+</p>
+</div>
+<button class="collapsible">Symptoms</button>
+<div class="content">
+  <p>Symptoms can include pain, swelling, stiffness, decreased range of motion. Arthritis can affect you on different degrees and can change over time.</p>
+</div>
+<button class="collapsible">Support and Resources</button>
+<div class="content">
+  <p>Support and resources can be found on https://www.arthritis.org/living-with-arthritis/tools-resources/ 
+</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
+
+</body>
+</html>
