@@ -2,32 +2,9 @@
 <html>
   <head>
     <link rel="stylesheet" href="Anxiety.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.collapsible {
-    background-color: #0000FF;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-}
-.active, .collapsible:hover {
-    background-color: #000000;
-}
-.content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #FFF;
-}
-</style>
   </head>
   <body>
-  <center><h1 class="ribbon"><strong class="ribbon-content">TITLE</strong></h1></center>
+    <center><h1> TITLE</h1></center>
     <center><ul>
       <li><a href="home.html">Home</a></li>
       <li class="dropdown">
@@ -44,39 +21,16 @@
       <li><a href="contact.html">Contact Us</a></li>
     </ul></center>
     <div class="pages">
-   <center><h2>Arthritis</h2></center>
-
-
-<button class="collapsible">About</button>
-<div class="content">
-  <p>According to arthritis.org, arthritis is “an informal way of referring to joint pain or joint disease” with “100 different types of arthritis”.
-</p>
-</div>
-<button class="collapsible">Symptoms</button>
-<div class="content">
-  <p>Symptoms can include pain, swelling, stiffness, decreased range of motion. Arthritis can affect you on different degrees and can change over time.</p>
-</div>
-<button class="collapsible">Support and Resources</button>
-<div class="content">
-  <p>Support and resources can be found on https://www.arthritis.org/living-with-arthritis/tools-resources/ </br></br>Seek help for Arthritis at: </br>Arthritis and Joint Replacement Service at Stanford Healthcare:</br>Phone: 650-723-5643</br>Address: 450 Broadway Street</br>Redwood City, CA 94063
-</p>
-</div>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
-    });
-}
-</script>
+    <center><h3>Arthritis</h3></center>
+    <p>
+    According to <a href="arthritis.org">arthritis.org</a>, arthritis is “an informal way of referring to joint pain or joint disease” with “100 different types of arthritis”.</p>
+    <p><br></br>Symptoms can include pain, swelling, stiffness, decreased range of motion. Arthritis can affect you on different degrees and can change over time.</p>
+    <p><br></br>Support and resources can be found on <a href="https://www.arthritis.org/living-with-arthritis/tools-resources/">this website</a></p>
+    <p><br></br>Seek help for Arthritis at:
+    Arthritis and Joint Replacement Service at Stanford Healthcare:
+    Phone: 650-723-5643
+    Address: 450 Broadway Street
+    Redwood City, CA 94063</p>
   </div>
   </body>
 </html>

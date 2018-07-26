@@ -3,31 +3,6 @@
   <head>
     <link rel="stylesheet" href="Anxiety.css">
   </head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-  .collapsible {
-      background-color: #0000FF;
-      color: white;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-  }
-
-  .active, .collapsible:hover {
-      background-color: #000000;
-  }
-
-  .content {
-      padding: 0 18px;
-      display: none;
-      overflow: hidden;
-      background-color: #FFF;
-  }
-  </style>
   <body>
     <center><h1> TITLE</h1></center>
     <center><ul>
@@ -46,42 +21,17 @@
       <li><a href="contact.html">Contact Us</a></li>
     </ul></center>
     <center><h3>Heart Disease</h3></center>
-
-    
-
-
-    <button class="collapsible">About</button>
-    <div class="content">
-      <p>Heart disease is an umbrella term, and many of those issues relate to a process called atherosclerosis.</br>“Atherosclerosis is a condition that develops when a substance called plaque builds up in the walls of the arteries. This buildup narrows the arteries, making it harder for blood to flow through. If a blood clot forms, it can stop the blood flow. This can cause a heart attack or stroke.”
-
-    </p>
+    <p>Heart disease is an umbrella term, and many of those issues relate to a process called atherosclerosis.
+    Atherosclerosis is a condition that develops when a substance called plaque builds up in the walls of the arteries. This buildup narrows the arteries, making it harder for blood to flow through. If a blood clot forms, it can stop the blood flow. This can cause a heart attack or stroke.</p>
+    <p><br></br>Symptoms can include shortness of breath, nausea and fatigue, pain in the shoulders, arms, chest or back, and lightheadedness.</p>
+    <p><br></br>In 2015, approximately 17.7 million people died from cardiovascular disease worldwide.</p>
+    <p><br></b> Resource: 1-800-242-8721 -- American Heart Association</p>
+    <p><br></br>Seek help for Heart Disease at:
+    Sequoia Hospital
+    170 Alameda de las Pulgas
+    Redwood City, CA 94062
+    Phone number(650) 369-5811</p>
     </div>
-    <button class="collapsible">Symptoms</button>
-    <div class="content">
-      <p>Symptoms can include shortness of breath, nausea and fatigue, pain in the shoulders, arms, chest or back, and lightheadedness.</p>
-    </div>
-    <button class="collapsible">Support and Resources</button>
-    <div class="content">
-      <p>1-800-242-8721 -- American Heart Association </br></br>Seek help for Heart Disease at:</br> Sequoia Hospital </br>170 Alameda de las Pulgas</br>Redwood City, CA 94062</br>Phone number(650) 369-5811
-    </p>
-    </div>
-
-    <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        });
-    }
-    </script>
 
   </body>
 </html>
