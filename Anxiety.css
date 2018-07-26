@@ -17,7 +17,7 @@ body {
 
 /* Toggle Stuff for Disease*/
 .collapsible {
-    background-color: #0000FF;
+    background-color: #00A8D0;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -29,7 +29,7 @@ body {
 }
 
 .active, .collapsible:hover {
-    background-color: #000000;
+    background-color: #65D0FF;
 }
 
 .content {
@@ -111,7 +111,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #EFEFEF;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -119,7 +119,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #EFEFEF;
 }
 
 /* Style the container/contact section */
