@@ -116,3 +116,9 @@ li.dropdown {
  right: 0;
  border-width: 1em 1em 0 0;
 }
+
+/*disease page stuff*/
+.collapsible {
+  background-color: #00A8D0;
+  color: #EFEFEF;
+  }
