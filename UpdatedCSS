@@ -122,3 +122,7 @@ li.dropdown {
   background-color: #00A8D0;
   color: #EFEFEF;
   }
+  
+.content {
+  color: #3B535C
+ }
