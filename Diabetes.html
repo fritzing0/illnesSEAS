@@ -2,6 +2,29 @@
 <html>
   <head>
     <link rel="stylesheet" href="Anxiety.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+    background-color: #0000FF;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.active, .collapsible:hover {
+    background-color: #000000;
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #FFF;
+}
+</style>
   </head>
   <body>
     <center><h1 class="ribbon"><strong class="ribbon-content">TITLE</strong></h1></center>
@@ -21,16 +44,39 @@
       <li><a href="contact.html">Contact Us</a></li>
     </ul></center>
     <div class="pages">
-    <center><h3>Diabetes</h3></center>
-    <p>
-Type 1 does not make insulin while type 2 doesn’t make or use insulin well. Gestational diabetes usually occurs in some women who are pregnant but can go away after birth. There is more of a chance to get type 2 later in life. Additionally, 9.4% of people in US have a type of diabetes.</p>
-<p><br></br> Symptoms can include increased hunger, fatigue, blurred vision, numbness or tingling in the feet or hands, sores that do not heal, or unexplained weight loss.</p>
-<p><br></br>Support and resources can be found on <a href="https://www.niddk.nih.gov/health-information/communication-programs/ndep/health-professionals/game-plan-preventing-type-2-diabetes/help-patients-make-lifestyle-changes-after-prediabetes-diagnosis/support-your-patients-with-resources-referrals">the following website.</a>
-</p><p><br></br>Seek help for Diabetes at:
-UCSF Medical Center – San Francisco, CA.
-Address: 505 Parnassus Ave, San Francisco, CA 94143
-Phone: (415) 476-1000
-    </p>
+    <center><h2>Diabetes</h2></center>
+
+
+<button class="collapsible">About</button>
+<div class="content">
+  <p>Type 1 does not make insulin while type 2 doesn’t make or use insulin well. Gestational diabetes usually occurs in some women who are pregnant but can go away after birth. There is more of a chance to get type 2 later in life. Additionally, 9.4% of people in US have a type of diabetes.
+</p>
+</div>
+<button class="collapsible">Symptoms</button>
+<div class="content">
+  <p>Symptoms can include increased hunger, fatigue, blurred vision, numbness or tingling in the feet or hands, sores that do not heal, or unexplained weight loss.</p>
+</div>
+<button class="collapsible">Support and Resources</button>
+<div class="content">
+  <p>Support and resources can be found on the following website. https://www.niddk.nih.gov/health-information/communication-programs/ndep/health-professionals/game-plan-preventing-type-2-diabetes/help-patients-make-lifestyle-changes-after-prediabetes-diagnosis/support-your-patients-with-resources-referrals</br></br>UCSF Medical Center – San Francisco, CA.</br>Address: 505 Parnassus Ave, San Francisco, CA 94143</br>Phone: (415) 476-1000
+</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
   </div>
   </body>
 </html>
