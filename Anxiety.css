@@ -181,7 +181,7 @@ input[type=submit]:hover {
  position: absolute;
  display: block;
  bottom: -1em;
- border: 1.5em solid #00A8D0;
+ border: 2em solid #00A8D0;
  z-index: -1;
 }
 .ribbon:before {
@@ -204,9 +204,9 @@ input[type=submit]:hover {
 }
 .ribbon .ribbon-content:before {
  left: 0;
- border-width: 1em 0 0 1em;
+ border-width: 1em 0 0 1.5em;
 }
 .ribbon .ribbon-content:after {
  right: 0;
- border-width: 1em 1em 0 0;
+ border-width: 1em 1.5em 0 0;
 }
