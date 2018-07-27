@@ -185,13 +185,13 @@ input[type=submit]:hover {
  z-index: -1;
 }
 .ribbon:before {
- left: -2em;
- border-right-width: 1.5em;
+ left: -3.5em;
+ border-right-width: 3em;
  border-left-color: transparent;
 }
 .ribbon:after {
- right: -2em;
- border-left-width: 1.5em;
+ right: -3.5em;
+ border-left-width: 3em;
  border-right-color: transparent;
 }
 .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
