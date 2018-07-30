@@ -16,6 +16,11 @@ body {
   font-size: 8px;
 }
 
+#human {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
 /* Toggle Stuff for Disease*/
 .collapsible {
     background-color: #00A8D0;
@@ -165,7 +170,7 @@ input[type=submit]:hover {
 /* ribbon stuff */
 
 .ribbon {
- font-size: 16px !important;
+ font-size: 23px !important;
  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
 
  width: 30%;
@@ -211,6 +216,7 @@ input[type=submit]:hover {
  right: 0;
  border-width: 1em 1.5em 0 0;
 }
+
 
 
 h1 {
