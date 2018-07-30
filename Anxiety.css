@@ -1,6 +1,7 @@
-/*main Stuff */
+/*Main Stuff */
 .title {
   font-family: gotham;
+
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 
 /* Toggle Stuff for Disease*/
 .collapsible {
-    background-color: #0000FF;
+    background-color: #00A8D0;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -29,7 +30,7 @@ body {
 }
 
 .active, .collapsible:hover {
-    background-color: #000000;
+    background-color: #65D0FF;
 }
 
 .content {
@@ -38,8 +39,6 @@ body {
     overflow: hidden;
     background-color: #FFF;
 }
-
-
 /* Menu Stuff */
 
 ul {
@@ -113,7 +112,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #EFEFEF;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -121,7 +120,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #EFEFEF;
 }
 
 /* Style the container/contact section */
@@ -146,6 +145,15 @@ input[type=submit]:hover {
     clear: both;
 }
 
+.content {
+  color: #3B535C;
+}
+
+.collapsible {
+  color: #EFEFEF;
+  background-color: #00A8D0;
+}
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column, input[type=submit] {
@@ -154,10 +162,145 @@ input[type=submit]:hover {
     }
 }
 
-/*Spacing for youtube videos */
-.spacing {
-  display: flex;
+/* ribbon stuff */
+
+.ribbon {
+ font-size: 16px !important;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+ width: 30%;
+
+ position: relative;
+ background: #00A8D0;
+ color: #fff;
+ text-align: center;
+ padding: 1em 2em; /* Adjust to suit */
+ margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 }
-.spacing > div {
-  flex: 1; /*grow*/
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 2em solid #00A8D0;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -3.5em;
+ border-right-width: 3em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -3.5em;
+ border-left-width: 3em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #007794 transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1.5em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1.5em 0 0;
+}
+
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: black;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 10px;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
 }
