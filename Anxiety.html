@@ -25,35 +25,63 @@
     <center><h3>Anxiety</h3></center>
 
     </div>
-    <button class="collapsible">About</button>
+    <button class="collapsible" id="sa_button1">About</button>
     <div class="content">
     <p>1/20 teens in the us has anxiety. Everyone feels anxious from time to time, but only diagnosed as anxiety disorder if it becomes excessive (if it is disproportionate to situation, disrupts life, distressing to person, or lasts long)
     </p>
     </div>
-    <button class="collapsible">Symptoms</button>
+    <button class="collapsible" id="sa_button2">Symptoms</button>
     <div class="content">
       <p>There are many different symptoms including lightheadedness, nausea, shortness of breath, chest pain, headaches, and sleep loss.</p>
     </div>
-    <button class="collapsible">Support and Resources</button>
+    <button class="collapsible" id="sa_button2">Support and Resources</button>
     <div class="content">
       <p>Talk to a trusted adult. </br>onyourmind.net provides support for teen by teens</br>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-6264</br></br>Seek help for Anxiety at:</br>Kristi Erickson, PhD, </br>Phone: (650) 208-1472</br>Address: 405 Kipling St, Palo Alto, CA 94301</p>
     </div>
+    <button id = "showall" class="collapsible">Show All</button>
+    <div class="content">
+    </div>
+
 
     <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+    // assign script functionality to show_all div
 
-    for (i = 0; i < coll.length; i++) {
+
+    id_list = ["sa_button1", "sa_button2", "sa_button3"];
+    var coll = document.getElementsByClassName("collapsible");
+
+    for (var i = 0; i < coll.length-1; i++) {
         coll[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
             if (content.style.display === "block") {
+
                 content.style.display = "none";
-            } else {
+
+            }
+            else {
+
                 content.style.display = "block";
+
             }
         });
     }
+
+    var show_all = document.getElementById("showall")
+    show_all.addEventListener("click", function(){
+      this.classList.toggle("active")
+      for(var i = 0; i < coll.length-1; i++){
+        coll[i].classList.toggle("active");
+
+        if(document.getElementById(id_list[i]).style.display === "none"){
+          document.getElementById(id_list[i]).style.display = "block";
+        }
+        else if(document.getElementById(id_list[i]).style.display === "block"){
+          document.getElementById(id_list[i]).style.display = "none";
+        }
+
+      }
+    })
     </script>
     <br/>
     <div class = spacing>
