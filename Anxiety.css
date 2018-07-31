@@ -16,6 +16,11 @@ body {
   font-size: 8px;
 }
 
+.buttonn {
+  background-color:#00A8D0;
+  color: #EFEFEF;
+}
+
 #human {
   margin-right: 151px;
   margin-left: 151px;
