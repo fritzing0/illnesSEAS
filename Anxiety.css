@@ -314,3 +314,11 @@ h1 {
     width: 70%;
   }
 }
+
+/*Youtube Spacing*/
+.spacing {
+  display: flex;
+}
+.spacing > div {
+  flex: 1; /*grow*/
+}
