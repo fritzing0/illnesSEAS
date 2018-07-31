@@ -25,35 +25,66 @@
     <center><h3>Arthritis</h3></center>
 <center><form method="get" action="todolist.html"><button type="submit" class="button">Tracker</button></form></center>
     <button class="collapsible">About</button>
-    <div class="content">
+    <button class="collapsible">About</button>
+    <div class="content" id="sa_button1" style="display: none;">
       <p>According to arthritis.org, arthritis is <q>an informal way of referring to joint pain or joint disease</q> with <q>100 different types of arthritis</q>.
     </p>
     </div>
     <button class="collapsible">Symptoms</button>
-    <div class="content">
+    <div class="content" id="sa_button2" style="display: none;">
       <p>Symptoms can include pain, swelling, stiffness, decreased range of motion. Arthritis can affect you on different degrees and can change over time.</p>
     </div>
     <button class="collapsible">Support and Resources</button>
-    <div class="content">
+    <div class="content" id="sa_button3" style="display: none;">
       <p>Support and resources can be found on https://www.arthritis.org/living-with-arthritis/tools-resources/ </br></br>Seek help for Arthritis at: </br>Arthritis and Joint Replacement Service at Stanford Healthcare:</br>Phone: 650-723-5643</br>Address: 450 Broadway Street</br>Redwood City, CA 94063
     </p>
     </div>
 
-    <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+    <button id = "showall" class="collapsible">Show All</button>
+    <div class="content">
+    </div>
 
-    for (i = 0; i < coll.length; i++) {
+
+    <script>
+    // assign script functionality to show_all div
+
+
+
+    id_list = ["sa_button1", "sa_button2", "sa_button3"];
+    var coll = document.getElementsByClassName("collapsible");
+
+    for (var i = 0; i < coll.length-1; i++) {
         coll[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
             if (content.style.display === "block") {
+
                 content.style.display = "none";
-            } else {
+
+            }
+            else {
+
                 content.style.display = "block";
+
             }
         });
     }
+
+    var show_all = document.getElementById("showall")
+    show_all.addEventListener("click", function(){
+      this.classList.toggle("active")
+      for(var i = 0; i < coll.length-1; i++){
+        coll[i].classList.toggle("active");
+
+        if(document.getElementById(id_list[i]).style.display === "none"){
+          document.getElementById(id_list[i]).style.display = "block";
+        }
+        else if(document.getElementById(id_list[i]).style.display === "block"){
+          document.getElementById(id_list[i]).style.display = "none";
+        }
+
+      }
+    })
     </script>
   </div>
   <center
