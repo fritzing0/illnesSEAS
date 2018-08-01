@@ -229,6 +229,11 @@ h1 {
   margin: 80px 0;
 }
 
+/* About Page Margin */
+.about_page {
+  margin: 40px;
+}
+
 .box {
   width: 40%;
   margin: 0 auto;
